@@ -135,9 +135,9 @@ int main(int argc, char* argv[]) {
 				case KEY_1:
 					/* handle combination */
 					if (keyStates[KEY_3] && xarcdev.ev[ctr].value) {
-						uinput_kbd_write(&uinp_kbd, KEY_6, 1, EV_KEY);
+						uinput_kbd_write(&uinp_kbd, KEY_TAB, 1, EV_KEY);
 						uinput_kbd_sleep();
-						uinput_kbd_write(&uinp_kbd, KEY_6, 0, EV_KEY);
+						uinput_kbd_write(&uinp_kbd, KEY_TAB, 0, EV_KEY);
 						combo = 2;
 						continue;
 					}
