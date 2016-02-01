@@ -70,8 +70,8 @@ int main(int argc, char* argv[]) {
 		exit(-1);
 	}
 
-	uinput_gpad_open(&uinp_gpads[0], UINPUT_GPAD_TYPE_XARCADE);
-	uinput_gpad_open(&uinp_gpads[1], UINPUT_GPAD_TYPE_XARCADE);
+	uinput_gpad_open(&uinp_gpads[0], UINPUT_GPAD_TYPE_XARCADE, 0);
+	uinput_gpad_open(&uinp_gpads[1], UINPUT_GPAD_TYPE_XARCADE, 1);
 	uinput_kbd_open(&uinp_kbd);
 
 	if (detach) {
